@@ -1,14 +1,16 @@
-Файл excell сначало добавляется в базу данных, после кэшируется в redis и отображается из кэша.
+Файл excell с начало добавляется в базу данных, после кэшируется в redis и отображается из кэша.
 Незаполненные поля отбрасываются.
-И только после запуска очереди данные добавляются в redis
+И только после запуска очереди данные добавляются в redis.
 
 Установка
- 1) Скопируем  вайл .env_examele под именем .env
+ 1) Скопировать файл .env_examele под именем .env
  2) composer install
  3) ./vendor/bin/sail up
  4) $ artisan migrate:fresh --seed
     $ sail artisan storage:link
     $ sail artisan cache:clear
     $ sail artisan queue:work
- 5) Потом в приложении загружаем файл https://docs.google.com/document/d/1g07FLoKzvH-VwMCC_2A1vsGZurvDq0DrM8ptad9wt7c/edit
+ 5) Потом скачиваем файл (ниже ссылка) и загружаем в приложение
+    https://docs.google.com/document/d/1g07FLoKzvH-VwMCC_2A1vsGZurvDq0DrM8ptad9wt7c/edit
+
 
